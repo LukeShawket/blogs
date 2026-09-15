@@ -1,0 +1,55 @@
+---
+title: "About My Website"
+date: "2026-09-14"
+description: "When why how this site was made?"
+tags: ["Web Development", "Portfolio", "Next.js"]
+published: true
+---
+
+# About My Website
+
+Making websites wasn't really my thing. But while working on my portfolio back in 2024, a friend showed me his personal website. I thought it was super cool. After looking into it, I realized I could build my own digital space to drop my projects, resume, and whatever else I wanted. 
+
+I started by building a basic static HTML page, picking up HTML and CSS along the way. Once it was ready, I bought a domain through Namecheap and hosted it on GitHub Pages. 
+
+Like with most things in my life, I have this annoying habit of comparing my work to everyone else's (I know it's bad, but hear me out). Looking at other developers' sites, mine felt way too basic. So I decided to upgrade it and build a proper multi-page static site. 
+
+After that was done, I took a break. Coming back to it later, though, I noticed a couple of things: it felt pretty slow, and having URLs that showed file extensions like `index.html` looked outdated and threw me off. 
+
+That’s when I ran into Next.js. The problem was, I didn't actually know JavaScript yet. Since my main goal was just to have a cool site, I figured I'd let AI generate the Next.js code for me. That turned out to be super frustrating. Every time a bug popped up, getting the AI to fix it was a nightmare unless I gave it full context over my entire dev environment. 
+
+Eventually, I gave up on relying on AI and just learned JavaScript and Next.js myself. 
+
+People say comparing yourself to others is bad, but in my case, it actually worked out. It forced me to level up, and now I know way more about web development than I did two years ago. 
+
+Enough said—here is everything I used to build this site:
+
+---
+
+## Tech Stack & Tools
+
+* **Framework:** [Next.js](https://nextjs.org/) (App Router & React Server Components)
+* **Languages:** TypeScript & JavaScript
+* **Styling:** Tailwind CSS with custom CSS variables for themes
+* **Theme System:** `next-themes` (Light, Dark, and System modes)
+* **Typography:** Geist Sans & Geist Mono
+* **Content & Data:** MDX parsed with `gray-matter`, fetched directly from GitHub via the REST API
+* **Hosting:** Vercel (Frontend), GitHub Pages & Repos (Data/Media), Namecheap (DNS)
+
+---
+
+## Colors & Styling Choices
+
+I wanted the site to feel distinct rather than standard pure black and white, so I picked a warm, high-contrast palette paired with emerald accents:
+
+* **Light Mode:** Warm, creamy mocha background (`#F5E8D8`) with dark slate text (`#1C1C1C`).
+* **Dark Mode:** Deep slate dark background (`#1C1C1C`) with creamy mocha text (`#F5E8D8`).
+* **Accents:** Emerald green (`#10b981`) for text highlights, hover states, status badges, and custom selection highlights.
+
+---
+
+## Layout & Design Details
+
+* **Monospace Hints:** Geist Mono is used for dates, tags, repository metrics, and status badges to give the UI a subtle developer/terminal aesthetic.
+* **Glassmorphism:** Subdued borders (`border-[var(--foreground)]/10`) paired with backdrop blurs (`backdrop-blur-md`) on cards for a clean, layered feel.
+* **Layout Stability:** Sticky Flexbox architecture ensures the footer stays pinned to the bottom, paired with strict horizontal overflow containment so mobile scrolling stays smooth.
